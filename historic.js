@@ -45,10 +45,10 @@ window.addEventListener("DOMContentLoaded", async () => {
         ...data.map((doc) => doc.data().temperature)
       )}`;
       maxHum.innerText = `Humedad máxima: ${Math.max(
-        ...data.map((doc) => doc.data().temperature)
+        ...data.map((doc) => doc.data().humidity)
       )}`;
-      minHum.innerText += `Humedad mínima: ${Math.max(
-        ...data.map((doc) => doc.data().temperature)
+      minHum.innerText = `Humedad mínima: ${Math.min(
+        ...data.map((doc) => doc.data().humidity)
       )}`;
       regNum.innerText = `Número de registros: ${data.length}`;
     }

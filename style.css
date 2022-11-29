@@ -15,6 +15,10 @@ nav {
   background-color: rgb(80, 128, 142);
 }
 
+canvas {
+  margin: 0px 75px;
+}
+
 nav img {
   width: auto;
   height: 210px;
