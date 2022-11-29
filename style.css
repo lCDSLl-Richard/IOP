@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika&family=Space+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Signika", sans-serif;
+}
+
+nav {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(80, 128, 142);
+}
+
+nav img {
+  width: auto;
+  height: 210px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  justify-content: space-evenly;
+  justify-content: space-evenly;
+  text-decoration: none;
+  font-size: 48px;
+  color: white;
+  font-weight: 1000;
+}
+
+nav ul li a {
+  text-decoration: none;
+  transition: all 100ms ease;
+}
+
+nav ul li a:visited,
+nav ul li a:active,
+a:target {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover,
+a:visited:hover {
+  transition: all 100ms ease;
+  color: black;
+  font-size: 52px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article h2 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section table {
+  padding: 20px;
+  max-height: 55vh;
+  display: block;
+  overflow-y: scroll;
+}
+
+.table-container {
+  height: 300px;
+}
+
+td {
+  width: 150px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.stats-container {
+  text-align: center;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#main-title {
+  text-align: center;
+  font-size: 48px;
+  padding: 50px 0;
+}
+
+canvas {
+  max-height: 55vh;
+}

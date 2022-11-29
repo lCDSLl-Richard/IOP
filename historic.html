@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IOP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="./Logo IOP.png" alt="logo" />
+      <ul>
+        <li><a href="index.html">DASHBOARD</a></li>
+        <li><a href="historic.html">HISTÓRICO</a></li>
+      </ul>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <h1 id="main-title">Datos Históricos</h1>
+    <article>
+      <h2>Pila 1</h2>
+      <section>
+        <div class="table-container">
+          <table id="dataList"></table>
+        </div><div class="stats-container">
+          <h2>Estad<C3><AD>sticas</h2>
+          <p id="averageT">Temperatura promedio:</p>
+          <p id="averageH">Humedad Promedio:</p>
+          <p id="maxTemp">Temperatura M<C3><A1>xima:</p>
+          <p id="minTemp">Temperatura M<C3><AD>nima:</p>
+          <p id="maxHum">Humedad M<C3><A1>xima:</p>
+          <p id="minHum">Humedad M<C3><AD>nima:</p>
+          <p id="regNum">Cantidad de Registros:</p>
+        </div>
+      </section>
+    </article>
+    <script type="module" src="historic.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
