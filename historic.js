@@ -32,17 +32,25 @@ window.addEventListener("DOMContentLoaded", async () => {
         avgT += Number(doc.data().temperature);
         avgH += Number(doc.data().humidity);
       });
-      averageT.innerText += " " + (avgT / data.length).toFixed(2);
-      averageH.innerText += " " + (avgH / data.length).toFixed(2);
-      maxTemp.innerText +=
-        " " + Math.max(...data.map((doc) => doc.data().temperature));
-      minTemp.innerText +=
-        " " + Math.min(...data.map((doc) => doc.data().temperature));
-      maxHum.innerText +=
-        " " + Math.max(...data.map((doc) => doc.data().humidity));
-      minHum.innerText +=
-        " " + Math.min(...data.map((doc) => doc.data().humidity));
-      regNum.innerText += " " + data.length;
+      averageT.innerText = `Temperatura promedio: ${(
+        avgT / data.length
+      ).toFixed(2)}`;
+      averageH.innerText = `Humedad promedio: ${(avgH / data.length).toFixed(
+        2
+      )}`;
+      maxTemp.innerText = `Temperatura máxima: ${Math.max(
+        ...data.map((doc) => doc.data().temperature)
+      )}`;
+      minTemp.innerText = `Temperatura mínima: ${Math.min(
+        ...data.map((doc) => doc.data().temperature)
+      )}`;
+      maxHum.innerText = `Humedad máxima: ${Math.max(
+        ...data.map((doc) => doc.data().temperature)
+      )}`;
+      minHum.innerText += `Humedad mínima: ${Math.max(
+        ...data.map((doc) => doc.data().temperature)
+      )}`;
+      regNum.innerText = `Número de registros: ${data.length}`;
     }
   });
 });

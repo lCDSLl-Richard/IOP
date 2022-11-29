@@ -22,7 +22,7 @@ const db = getFirestore(app);
 
 const colRef = collection(db, "pile-1");
 
-const URL = "http://192.168.154.49";
+const URL = "http://192.168.223.49";
 // const URL = "localhost:2000";
 
 export const start = () => {

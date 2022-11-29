@@ -2,8 +2,6 @@ import { getData } from "./firebase.js";
 
 const ctx = document.getElementById("myChart");
 
-console.log(ctx);
-
 window.addEventListener("DOMContentLoaded", async () => {
   let data = [];
   getData((snapshot) => {
@@ -13,7 +11,9 @@ window.addEventListener("DOMContentLoaded", async () => {
       data = data.splice(0, 10);
       const temp = data.map((doc) => doc.data().temperature);
       const hum = data.map((doc) => doc.data().humidity);
-      const date = data.map((doc) => doc.data().date.toDate());
+      const date = data.map((doc) =>
+        moment(doc.data().date.toDate()).format("HH:mm:ss")
+      );
       new Chart(ctx, {
         type: "line",
         data: {
