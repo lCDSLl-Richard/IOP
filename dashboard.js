@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", async () => {
               data: hum,
               borderWidth: 1,
               fill: false,
-              borderColor: "rgb(75, 192, 192)",
+              borderColor: "rgb(175, 192, 192)",
               tension: 0.1,
             },
           ],
