@@ -31,8 +31,13 @@ Como primer paso para el desarrollo del Proyecto, una vez contando con los mater
 ![enter image description here](https://raw.githubusercontent.com/lCDSLl-Richard/IOP/main/assets/1.png)
 Para probar el funcionamiento de la Node MCU, se realizó una conexión con la computadora, y usando el lenguaje de desarrollo Arduino, se probó el código para realizar un parpadeo en el LED usando el siguiente código:
 ![enter image description here](https://raw.githubusercontent.com/lCDSLl-Richard/IOP/main/assets/2.png)
-Conexión a Internet de la Node MCU Como el módulo WiFi ya viene integrado a la tarjeta solo se realizó la conexión del LED con una resistencia, tal y como se muestra en el siguiente diagrama:
+
+# Conexión a Internet de la Node MCU
+Como el módulo WiFi ya viene integrado a la tarjeta solo se realizó la conexión del LED con una resistencia, tal y como se muestra en el siguiente diagrama:
+
 ![enter image description here](https://raw.githubusercontent.com/lCDSLl-Richard/IOP/main/assets/3.png)
+
+El led nos sirvió como indicador del estatus. Para la conexión, usamos una librería específica del ESP para conectarnos, simplemente introduciendo el SSID y la contraseña de la red.
 # Creación de la Base de Datos 
 La base de datos fue creada usando el servicio de Google Firebase, el cuál es gratuito y nos genera un base de datos no relacional, accesible desde el internet.
 # Almacenamiento de los Datos
@@ -48,3 +53,9 @@ Finalmente, en el archivo historic.js, hacemos uso de la API de Firebase para ob
 - Visual Studio Code
 - Arduino IDE 2.0+
 - Firebase API
+# Autores
+Ricardo Fernández
+
+Hossue Ceja
+
+Ulises Soria
